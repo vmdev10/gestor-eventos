@@ -1,0 +1,76 @@
+.BannerContainer {
+  background-image: url("https://images.unsplash.com/photo-1579547621309-5e57ab324182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  padding: 0 0.9375rem;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 4.5rem);
+}
+
+.Presentation {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.5rem 0.5rem;
+
+  min-height: 100%;
+
+  border-left: 5px solid var(--primary);
+}
+
+.Title {
+  color: var(--secondary);
+  font-size: 3.5rem;
+  font-weight: 800;
+  padding-left: 1rem;
+}
+
+.Slogan {
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  color: var(--primary);
+
+  width: 100%;
+  max-width: 382px;
+}
+
+.Event button {
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 44px;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 886px) {
+  .Title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BannerContainer {
+    padding: 0 4rem;
+  }
+
+  .Slogan {
+    font-size: 1.125rem;
+
+    max-width: 100%;
+  }
+
+  .Event button {
+    padding: 1rem 2rem;
+    margin-left: 0.5rem;
+
+    font-size: 1rem;
+  }
+}
