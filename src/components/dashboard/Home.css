@@ -1,0 +1,101 @@
+.Home {
+  min-height: 100vh;
+}
+
+.NavContainer {
+  width: 100vw;
+  padding: 0 .9375rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.Navbar {
+  width: 100%;
+  height: 3.5rem;
+  margin: .5rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.Logo img {
+  width: 4rem;
+}
+
+.MenuToggle {
+  color: var(--primary);
+}
+
+.SearchIcon {
+  color: var(--primary)
+}
+
+.InputSearch {
+  display: none;
+}
+
+.NavLinks {
+  display: none;
+}
+
+@media (min-width: 886px) {
+  .MenuToggle {
+    display: none;
+  }
+
+  .SearchIcon {
+    display: none;
+  }
+
+  .InputSearch {
+    display: block;
+    position: relative;
+  }
+
+  .InputSearch .SearchIcon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+
+  .InputSearch input {
+    width: 22rem;
+    padding: .75rem 0 .75rem 2.5rem;
+    border-radius: 44px;
+    border: 1px solid var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  }
+
+  .NavLinks {
+    display: block;
+  }
+
+  .NavLink button {
+    margin: 0 1rem;
+    background-color: transparent;
+    color: var(--primary)
+  }
+  
+  .NavLink .Contrast{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .75rem 1.5rem;
+    border-radius: 44px;
+    margin-left: .5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .NavContainer {
+    padding: 0 4rem;
+  }
+}
