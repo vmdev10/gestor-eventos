@@ -1,0 +1,49 @@
+.CityImage img {
+  width: 5rem;
+  height: 7rem;
+
+  border-radius: .25rem;
+  background-color: thistle;
+  margin: 0 .5rem;
+}
+
+.City span {
+  display: flex;
+  justify-content: center;  
+}
+
+
+@media (min-width: 425px) {
+  .CityImage img  {
+    width: 8rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .CityImage img  {
+    width: 10rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .CityImage img  {
+    width: 12em;
+    height: 14rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CityImage img  {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .CityImage img  {
+    width: 10rem;
+    height: 10rem;
+  }
+}
