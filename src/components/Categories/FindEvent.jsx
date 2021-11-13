@@ -18,14 +18,14 @@ function FindEvent() {
         </a>
         <Carousel>
           <Box className="CarouselCardsContainer">
-            <CategoryCard className="firstImage" imageUrl='banner-gradient.jpg'/>
-            <CategoryCard imageUrl='logo.png'/>
-            <CategoryCard imageUrl='banner-gradient.jpg'/>
+            <CategoryCard imageUrl='banner-gradient.jpg' category="Cursos"/>
+            <CategoryCard imageUrl='logo.png' category="Cursos"/>
+            <CategoryCard imageUrl='banner-gradient.jpg' category="Cursos"/>
           </Box>
           <Box className="CarouselCardsContainer">
-            <CategoryCard imageUrl='logo.png'/>
-            <CategoryCard imageUrl='banner-gradient.jpg'/>
-            <CategoryCard imageUrl='banner-gradient.jpg'/>
+            <CategoryCard imageUrl='logo.png' category="Cursos"/>
+            <CategoryCard imageUrl='banner-gradient.jpg' category="Cursos"/>
+            <CategoryCard imageUrl='banner-gradient.jpg' category="Cursos"/>
           </Box>
         </Carousel>
       </div>

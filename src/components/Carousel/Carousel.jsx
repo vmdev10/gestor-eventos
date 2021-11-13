@@ -17,6 +17,7 @@ function Carousel(props) {
       NextIcon={ <ArrowForwardIosIcon/> }
       PrevIcon={ <ArrowBackIosIcon/> }
       cycleNavigation={false}
+      indicators={false}
     >
       {
         props.children
