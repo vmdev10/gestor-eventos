@@ -1,5 +1,5 @@
 import './App.css'
-import Home from './dashboard/Home'
+import Home from '../Pages/Home'
 
 import React from "react";
 
