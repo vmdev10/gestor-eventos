@@ -36,14 +36,7 @@
 
 @media (min-width: 1024px) {
   .CityImage img  {
-    width: 9rem;
-    height: 9rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .CityImage img  {
-    width: 10rem;
-    height: 10rem;
+    width: 14rem;
+    height: 16rem;
   }
 }
