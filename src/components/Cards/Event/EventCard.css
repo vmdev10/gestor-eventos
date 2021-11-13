@@ -1,0 +1,66 @@
+.EventCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardImage img {
+  width: 90%;
+  /* height: 7rem; */
+
+  border-radius: .25rem;
+  background-color: thistle;
+  margin: 0 .5rem;
+}
+
+.Informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.Informations span {
+  font-size: .75rem;
+  margin-left: .95rem;
+}
+
+.Informations h3 {
+  font-size: .85rem;
+  padding-left: .75rem;
+}
+
+.Informations p {
+  font-size: .75rem;
+  margin-left: .85rem;
+}
+
+.Informations a {
+  align-self: flex-start;
+  margin-left: .5rem;
+}
+
+
+@media (min-width: 630px) {
+  .EventCard .CardImage {
+    width: 100%;
+  }
+
+  .EventCard .Informations {
+    width: 100%;
+  }
+
+  .Informations span {
+    margin-left: 0;
+  }
+  
+  .Informations h3 {
+    padding-left: 0;
+  }
+  
+  .Informations p {
+    margin-left: 0;
+  }
+  
+  .CarouselContainer a button {
+    margin-left: 0;
+    padding: .75rem 1rem;
+  }
+}

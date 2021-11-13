@@ -16,7 +16,8 @@ function Carousel(props) {
       navButtonsAlwaysVisible={ props.navButtonsAlwaysVisible || true }
       NextIcon={ <ArrowForwardIosIcon/> }
       PrevIcon={ <ArrowBackIosIcon/> }
-      indicators={false}
+      indicators={ false }
+      fullHeightHover={ false }
     >
       {
         props.children

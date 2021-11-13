@@ -1,0 +1,67 @@
+.EventsContainer {
+  padding: 2rem 1rem;
+}
+
+.EventsContainer h3 {
+  font-size: 1.125rem;
+  color: var(--primary);
+  padding-left: 1rem;
+}
+
+.CarouselCardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 2rem 0 0;
+}
+
+.CarouselContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.CarouselContainer a {
+  align-self: end;
+  padding-top: .75rem;
+}
+
+.CarouselContainer a button {
+  color: var(--primary);
+  background-color: #fff;
+  border: 1px solid var(--primary);
+  padding: .75rem 1.5rem;
+  border-radius: 44px;
+  margin-left: .5rem;
+}
+
+.CarouselDesktop {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .EventsContainer h3 {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 630px) {
+  .CarouselContainer a {
+    display: none;
+  }
+
+  .CarouselMobile {
+    display: none;
+  }
+
+  .CarouselDesktop {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .EventsContainer {
+    padding: 4rem 4rem;
+  }
+}
