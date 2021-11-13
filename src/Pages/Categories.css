@@ -1,0 +1,39 @@
+.CategoriesComponent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+
+  max-width: 64rem;
+  margin: 0 auto;
+
+  padding: 2rem 1rem;
+}
+
+.CategoriesComponent div {
+  margin: .5rem;
+}
+
+.CategoriesComponent .ActivityImage img {
+  width: 8rem;
+  height: 8rem;
+}
+
+@media (min-width: 425px) {
+  .CategoriesComponent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: .5rem;
+  
+    max-width: 64rem;
+    margin: 0 auto;
+    
+    padding: 5rem 1rem;
+  }
+
+  .CategoriesComponent .ActivityImage img {
+    width: 10rem;
+    height: 10rem;
+  }
+}

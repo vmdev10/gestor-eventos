@@ -1,3 +1,10 @@
+.ActivityImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .ActivityImage img {
   width: 4rem;
   height: 4rem;
