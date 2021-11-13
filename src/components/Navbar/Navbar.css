@@ -73,18 +73,33 @@
     display: block;
   }
 
-  .NavLink button {
+  .NavLink {
+    text-decoration: none;
+    font-size: .9375rem;
+
     margin: 0 1rem;
     background-color: transparent;
     color: var(--primary)
   }
   
-  .NavLink .Contrast{
+  .NavLink.Contrast{
     background-color: var(--primary);
     color: var(--white);
     padding: .75rem 1.5rem;
     border-radius: 44px;
-    margin-left: .5rem
+    margin-left: .5rem;
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .NavLink.Contrast:hover,
+  .NavLink.Contrast:active {
+    background-color: var(--secondary);
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
   }
 }
 

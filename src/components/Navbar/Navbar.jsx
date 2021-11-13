@@ -1,8 +1,9 @@
-import './Navbar.css'
+import "./Navbar.css";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 
+import { Link } from "react-router-dom";
 import React from "react";
 
 function Navbar() {
@@ -13,9 +14,9 @@ function Navbar() {
           <MenuIcon />
         </div>
 
-        <a className="Logo">
+        <Link className="Logo" to="/">
           <img src="/images/logo.png" alt="" />
-        </a>
+        </Link>
 
         <div className="SearchIcon">
           <SearchIcon />
@@ -34,21 +35,21 @@ function Navbar() {
         </div>
 
         <div className="NavLinks">
-          <a href="" className="NavLink">
-            <button>Participar de evento</button>
-          </a>
+          <Link className="NavLink" to="categories">
+            Participar de evento
+          </Link>
 
-          <a href="" className="NavLink">
-            <button>Entrar</button>
-          </a>
+          <Link className="NavLink" to="login">
+            Entrar
+          </Link>
 
-          <a href="" className="NavLink">
-            <button className="Contrast">Cadastre-se</button>
-          </a>
+          <Link className="NavLink Contrast" to="signup">
+            Cadastre-se
+          </Link>
         </div>
       </div>
     </div>
   );
 }
 
-export default Navbar
+export default Navbar;
