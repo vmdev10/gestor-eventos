@@ -1,7 +1,8 @@
 import "./Home.css";
 import Navbar from "../components/Navbar/Navbar"
 import Presentation from '../components/Presentation/Presentation'
-import FindEvent from "../components/Categories/FindEvent";
+import Events from "../components/Categories/Events";
+import Cities from "../components/City/Cities"
 
 import React from "react";
 
@@ -11,7 +12,8 @@ function Home() {
       <Navbar />
       <Presentation />
 
-      <FindEvent />
+      <Events />
+      <Cities />
     </div>
   );
 }
