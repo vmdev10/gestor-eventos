@@ -13,9 +13,9 @@ function Navbar() {
           <MenuIcon />
         </div>
 
-        <div className="Logo">
+        <a className="Logo">
           <img src="/images/logo.png" alt="" />
-        </div>
+        </a>
 
         <div className="SearchIcon">
           <SearchIcon />
