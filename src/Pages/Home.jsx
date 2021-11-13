@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar"
 import Presentation from '../components/Presentation/Presentation'
 import Events from "../components/Categories/Events";
 import Cities from "../components/City/Cities"
+import Highlighted from "../components/Highlighted/Highlighted"
 
 import React from "react";
 
@@ -14,6 +15,8 @@ function Home() {
 
       <Events />
       <Cities />
+
+      <Highlighted />
     </div>
   );
 }
