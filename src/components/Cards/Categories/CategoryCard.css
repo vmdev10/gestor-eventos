@@ -1,14 +1,56 @@
 .CategoryImage img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 
   border-radius: 50%;
   background-color: thistle;
-
   margin: 0 .5rem;
 }
 
 .Category span {
   display: flex;
   justify-content: center;  
+}
+
+
+@media (min-width: 425px) {
+  .CategoryImage img  {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .CategoryImage img  {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .CategoryImage img  {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .CategoryImage img  {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CategoryImage img  {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .CategoryImage img  {
+    width: 10rem;
+    height: 10rem;
+  }
 }
