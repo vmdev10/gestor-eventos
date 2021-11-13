@@ -1,7 +1,7 @@
 import "./Home.css";
 import Navbar from "../components/Navbar/Navbar"
 import Presentation from '../components/Presentation/Presentation'
-import Events from "../components/Categories/Events";
+import Activities from "../components/Activities/Activities";
 import Cities from "../components/City/Cities"
 import Highlighted from "../components/Highlighted/Highlighted"
 
@@ -13,7 +13,7 @@ function Home() {
       <Navbar />
       <Presentation />
 
-      <Events />
+      <Activities />
       <Cities />
 
       <Highlighted />

@@ -1,17 +1,17 @@
-import './CategoryCard.css'
+import './ActivityCard.css'
 
 import React from "react";
 
-function CategoryCard(props) {
+function ActivitiesCard(props) {
   return (
-    <div className="CategoryImage">
+    <div className="ActivityImage">
       <img src={`/images/${props.imageUrl}`} alt="" />
     
-      <div className="Category">
+      <div className="Activity">
           <span>{ props.category }</span>
       </div>
     </div>
   )
 }
 
-export default CategoryCard
+export default ActivitiesCard

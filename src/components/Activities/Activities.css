@@ -1,8 +1,8 @@
-.CategoriesContainer {
+.ActivitiesContainer {
   padding: 2rem 1rem;
 }
 
-.CategoriesContainer h3 {
+.ActivitiesContainer h3 {
   font-size: 1.125rem;
   color: var(--primary);
   padding-left: 1rem;
@@ -35,14 +35,14 @@
 }
 
 @media (min-width: 425px) {
-  .CategoriesContainer h3 {
+  .ActivitiesContainer h3 {
     padding-left: 2rem;
     font-size: 1.25rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .CategoriesContainer {
+  .ActivitiesContainer {
     padding: 4rem 4rem;
   }
 }
