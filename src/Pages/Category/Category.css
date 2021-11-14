@@ -14,7 +14,13 @@
 }
 
 .Category .Breadcumbs {
+  font-weight: 400;
+  color: var(--secondary)
+}
+
+.Category .Breadcumbs li p {
   font-weight: 500;
+  color: var(--secondary)
 }
 
 .Category .CategoryPresentation {
