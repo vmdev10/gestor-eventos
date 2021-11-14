@@ -1,0 +1,70 @@
+.SpeakersContainer {
+  padding: 2rem 1rem;
+
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.SpeakersContainer h1 {
+  color: var(--primary);
+  padding: 0.5rem 0;
+}
+
+.AboutSpeakers {
+  padding: 2rem 0;
+}
+
+.AboutSpeakers img {
+  width: 100%;
+}
+
+.AboutSpeakers h1 {
+  color: var(--primary);
+  padding: 0.5rem 0;
+}
+
+.AboutSpeakers span {
+  color: #858585;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.AboutSpeakers p {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  display: flex;
+  text-align: justify;
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .AboutSpeakers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .AboutSpeakers div {
+    width: 50%;
+    margin: 0 0.5rem;
+  }
+
+  .SpeakersContainer div:nth-child(3) div:first-child {
+    order: 1;
+  }
+
+  .SpeakersContainer div:nth-child(3) .AboutInformations {
+    order: 0;
+  }
+
+  .AboutSpeakers img {
+    width: 100%;
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+
+  .AboutSpeakers h1 {
+    padding: 0;
+  }
+}
