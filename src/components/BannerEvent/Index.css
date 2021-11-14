@@ -1,11 +1,11 @@
-.BannerContainer {
+.BannerEventContainer {
   background-image: url("https://images.unsplash.com/photo-1579547621309-5e57ab324182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-size: cover;
   padding: 2rem 1rem;
 
 }
 
-.BannerContainer .Event {
+.BannerEventContainer .Event {
   display: flex;
   flex-direction: column;
 
@@ -29,11 +29,11 @@
 }
 
 @media (min-width: 800px) {
-  .BannerContainer {
+  .BannerEventContainer {
     padding: 2rem 4rem;
   }
   
-  .BannerContainer .Event {
+  .BannerEventContainer .Event {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
