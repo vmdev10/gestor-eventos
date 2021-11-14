@@ -45,13 +45,13 @@ function Event() {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. 
+            remaining essentially unchanged.
           </p>
         </div>
       </div>
 
       <div className="Speakers">
-        <h3>Palestrantes</h3>
+        <h1>Palestrantes</h1>
 
         <div className="AboutSpeakers">
           <div>
@@ -73,43 +73,77 @@ function Event() {
         </div>
 
         <div className="AboutSpeakers">
-        <div>
-          <img src="/images/banner-gradient.jpg" alt="" />
+          <div>
+            <img src="/images/banner-gradient.jpg" alt="" />
+          </div>
+
+          <div className="AboutInformations">
+            <h1>Alice Mendes</h1>
+            <span>Analista de dados</span>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
         </div>
 
-        <div className="AboutInformations">
-          <h1>Alice Mendes</h1>
-          <span>Analista de dados</span>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-        </div>
+        <div className="AboutSpeakers">
+          <div>
+            <img src="/images/banner-gradient.jpg" alt="" />
+          </div>
 
+          <div className="AboutInformations">
+            <h1>Alice Mendes</h1>
+            <span>Analista de dados</span>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="AboutSpeakers">
-        <div>
-          <img src="/images/banner-gradient.jpg" alt="" />
-        </div>
+      <div className="Programation">
+          <h1>Programação</h1>
 
-        <div className="AboutInformations">
-          <h1>Alice Mendes</h1>
-          <span>Analista de dados</span>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
+        <div className="ProgramationContainer">
+          <div>
+            <h1>
+              <strong>9:00</strong>
+            </h1>
+            <span className="Speaker">VINÍCUIS MARTINS:</span>
+            <span>Conteúdo é o Rei. Design é a Rainha</span>
+          </div>
+          <div>
+            <h1>
+              <strong>9:00</strong>
+            </h1>
+            <span className="Speaker">VINÍCUIS MARTINS:</span>
+            <span>Conteúdo é o Rei. Design é a Rainha</span>
+          </div>
+          <div>
+            <h1>
+              <strong>9:00</strong>
+            </h1>
+            <span className="Speaker">VINÍCUIS MARTINS:</span>
+            <span>Conteúdo é o Rei. Design é a Rainha</span>
+          </div>
+          <div>
+            <h1>
+              <strong>9:00</strong>
+            </h1>
+            <span className="Speaker">VINÍCUIS MARTINS:</span>
+            <span>Conteúdo é o Rei. Design é a Rainha</span>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

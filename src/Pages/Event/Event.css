@@ -62,8 +62,9 @@
   margin: 0 auto;
 }
 
-.Speakers h3 {
+.Speakers h1 {
   color: var(--primary);
+  padding: .5rem 0;
 }
 
 .AboutSpeakers {
@@ -91,6 +92,70 @@
   display: flex;
   text-align: justify;
   padding-top: .5rem;
+}
+
+.Programation {
+  background-color: var(--primary);
+  padding: 2rem 1rem;
+}
+
+.Programation h1:first-child {
+    color: var(--white);
+}
+
+.ProgramationContainer  div:first-child {
+  margin-top: 2rem;
+}
+
+.ProgramationContainer  div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+}
+
+.ProgramationContainer div:nth-child(1),
+.ProgramationContainer div:nth-child(2) {
+  border-left: 4px solid var(--white);
+}
+
+.ProgramationContainer  div h1 {
+  font-size: 3rem;
+}
+
+.Programation .ProgramationContainer .Speaker {
+  color: var(--secondary);
+  font-weight: 500;
+  padding: 1rem 0 .25rem;
+}
+
+.Programation .ProgramationContainer span:nth-child(3) {
+  color: var(--white);
+}
+
+@media (min-width: 425px) {
+  .Programation {
+    padding: 3rem 2rem;
+  }
+
+  .Programation .ProgramationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  .ProgramationContainer  div:first-child {
+    margin-top: 0;
+  }
+
+  .Programation .ProgramationContainer div {
+    width: 50%;
+  }
 }
 
 
