@@ -1,8 +1,10 @@
+import './index.css'
+
 import React from "react";
 
 function Programation() {
   return (
-    <div className="ProgramationContainer">
+    <div className="Programation">
       <h1>Programação</h1>
 
       <div className="ProgramationContainer">
