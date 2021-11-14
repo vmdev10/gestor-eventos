@@ -1,8 +1,11 @@
+import Breadcrumb from '../Breadcrumbs/Index';
 import './Index.css'
 
 function BannerEvent() {
   return (
     <div className="BannerContainer">
+      <Breadcrumb />
+      
       <div className="Event">
         <div>
           <p>Fique à Frente da Indústria</p>
