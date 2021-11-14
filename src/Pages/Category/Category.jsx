@@ -1,12 +1,10 @@
 import "./Category.css";
 
-import Carousel from "../../components/Carousel/Carousel";
-import EventCard from "../../components/Cards/Event/EventCard";
+import Event from '../../components/Events/Events'
 
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
-import { Box } from "@material-ui/core";
 
 import React from "react";
 
@@ -45,97 +43,9 @@ function Category() {
         </div>
       </div>
 
-      <div className="CategoryEvents">
-          <div className="CarouselMobile">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-          <div className="CarouselDesktop">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-      </div>
-
-      <div className="CategoryEvents">
-          <div className="CarouselMobile">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-          <div className="CarouselDesktop">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-      </div>
-      <div className="CategoryEvents">
-          <div className="CarouselMobile">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-          <div className="CarouselDesktop">
-            <Carousel>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-              <Box className="CarouselCardsContainer">
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-                <EventCard imageUrl="banner-gradient.jpg" />
-              </Box>
-            </Carousel>
-          </div>
-      </div>
+      <Event event='Eventos online em alta'/>
+      <Event event='Começa em breve'/>
+      <Event event='Tecnologia'/>
     </>
   );
 }
