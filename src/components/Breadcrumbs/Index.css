@@ -1,0 +1,9 @@
+.BreadcrumbContainer .Breadcrumbs {
+  font-weight: 400;
+  color: var(--secondary)
+}
+
+.BreadcrumbContainer .Breadcrumbs li p {
+  font-weight: 500;
+  color: var(--secondary)
+}

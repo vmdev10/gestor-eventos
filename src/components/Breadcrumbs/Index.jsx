@@ -1,3 +1,5 @@
+import './Index.css'
+
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
@@ -11,20 +13,22 @@ function handleClick(event) {
 
 function Breadcrumb() {
   return (
-    <Breadcrumbs className="Breadcumbs" aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={handleClick}>
-        Home
-      </Link>
-      <Link
-        color="inherit"
-        href="/getting-started/installation/"
-        onClick={handleClick}
-      >
-        Categorias
-      </Link>
-      <Typography color="textPrimary">Categoria</Typography>
-    </Breadcrumbs>
+    <div className="BreadcrumbContainer">
+      <Breadcrumbs className="Breadcrumbs" aria-label="breadcrumb">
+        <Link color="inherit" href="/" onClick={handleClick}>
+          Home
+        </Link>
+        <Link
+          color="inherit"
+          href="/getting-started/installation/"
+          onClick={handleClick}
+        >
+          Categorias
+        </Link>
+        <Typography color="textPrimary">Categoria</Typography>
+      </Breadcrumbs>
+    </div>
   );
 }
 
-export default Breadcrumb
+export default Breadcrumb;
