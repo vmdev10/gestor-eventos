@@ -3,7 +3,7 @@ import './Index.css'
 
 function BannerEvent() {
   return (
-    <div className="BannerContainer">
+    <div className="BannerEventContainer">
       <Breadcrumb />
       
       <div className="Event">
