@@ -24,6 +24,37 @@
   text-align: justify;
 }
 
+.Location {
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1rem;
+}
+
+.Location div img {
+  width: 100%;
+}
+
+.LocationAddress h1 {
+  color: var(--primary);
+  padding: 0.5rem 0;
+}
+
+.LocationAddress span {
+  color: #858585;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.LocationAddress p {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  display: flex;
+  text-align: justify;
+  padding-top: 0.5rem;
+}
+
 @media (min-width: 600px) {
   .AboutContainer {
     display: flex;
@@ -46,6 +77,28 @@
   .AboutContainer h1 {
     padding: 0;
   }
+
+  .Location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .Location div {
+    width: 50%;
+    margin: 0 0.5rem;
+  }
+
+  .Location img {
+    width: 100%;
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+
+  .LocationAddress h1 {
+    padding: 0;
+  }
 }
 
 @media (min-width: 800px) {
@@ -59,6 +112,15 @@
   }
 
   .AboutContainer .AboutInformations {
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary);
+  }
+
+  .Location {
+    padding: 2rem 4rem;
+  }
+
+  .Location .LocationAddress {
     padding-left: 1rem;
     border-left: 4px solid var(--primary);
   }

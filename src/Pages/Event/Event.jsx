@@ -1,5 +1,3 @@
-import "./Event.css";
-
 import BannerEvent from "../../components/BannerEvent/Index";
 import About from "../../components/About/Index";
 import Speakers from "../../components/Speakers";
