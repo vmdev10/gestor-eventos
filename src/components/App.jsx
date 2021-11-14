@@ -6,7 +6,7 @@ import Categories from '../Pages/Categories';
 import Category from '../Pages/Category/Category'
 import City from '../Pages/CityEvents/CityEvents'
 import Event from '../Pages/Event/Event'
-import Tickets from './Tickets';
+import Tickets from '../Pages/Tickets';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from "react";
