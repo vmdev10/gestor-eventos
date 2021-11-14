@@ -7,6 +7,10 @@
 
 .Category {
   max-width: 520px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Category .Breadcumbs {
@@ -32,7 +36,12 @@
 
 @media (min-width: 768px) {
   .CategoryContainer {
+    height: 22rem;
     padding: 2rem 4rem;
+  }
+
+  .CategoryPresentation {
+    padding-bottom: 1rem;
   }
 
   .CategoryPresentation h3 {

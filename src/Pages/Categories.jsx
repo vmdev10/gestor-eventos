@@ -19,9 +19,6 @@ function Categories() {
       <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
       <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
       <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
     </div>
   )
 }
