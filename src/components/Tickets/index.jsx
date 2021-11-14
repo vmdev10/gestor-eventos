@@ -1,6 +1,7 @@
 import "./index.css";
 
 import BannerEvent from "../BannerEvent/Index";
+import GroupedButtons from '../GroupedButtons'
 
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -11,9 +12,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-import React from "react";
-
-const TAX_RATE = 0.07;
+import React, { useState } from "react";
 
 const useStyles = makeStyles({
   table: {
@@ -21,35 +20,46 @@ const useStyles = makeStyles({
   },
 });
 
-function ccyFormat(num) {
-  return `${num.toFixed(2)}`;
-}
-
-function priceRow(qty, unit) {
-  return qty * unit;
-}
-
-function createRow(desc, qty, unit) {
-  const price = priceRow(qty, unit);
-  return { desc, qty, unit, price };
-}
-
-function subtotal(items) {
-  return items.map(({ price }) => price).reduce((sum, i) => sum + i, 0);
-}
-
-const rows = [
-  createRow("Ingresso Antecipado", 100, 80),
-  createRow("Ingresso Regular", 10, 100),
-  createRow("Ingresso VIP", 2, 120),
-];
-
-const invoiceSubtotal = subtotal(rows);
-const invoiceTaxes = TAX_RATE * invoiceSubtotal;
-const invoiceTotal = invoiceTaxes + invoiceSubtotal;
 
 function Tickets() {
   const classes = useStyles();
+
+  const [amount, setAmount] = useState(0)
+    
+  const priceRow = (qty, unit) => {
+    return qty * unit;
+  }
+    
+  const createRow = (desc, qty, unit) => {
+    const price = priceRow(qty, unit);
+    return { desc, qty, unit, price };
+  }
+
+
+  const sendAmount = (amount) => {
+    setAmount(amount)
+  }
+
+  const rows = [
+    createRow("Ingresso Antecipado", <GroupedButtons amount={sendAmount}/>, 80),
+    createRow("Ingresso Regular", <GroupedButtons amount={sendAmount}/>, 100),
+    createRow("Ingresso VIP", <GroupedButtons amount={sendAmount}/>, 120),
+  ];
+
+  const TAX_RATE = 0.07;
+
+  const ccyFormat = (num) => {
+    return `${num.toFixed(2)}`;
+  }
+  
+  const subtotal = (items) => {
+    return items.map(({ price }) => price).reduce((sum, i) => sum + i, 0);
+  }
+  
+  const invoiceSubtotal = subtotal(rows);
+  const invoiceTaxes = TAX_RATE * invoiceSubtotal;
+  const invoiceTotal = invoiceTaxes + invoiceSubtotal;
+
 
   return (
     <div className="TicketContainer">
@@ -69,7 +79,7 @@ function Tickets() {
             {rows.map((row) => (
               <TableRow key={row.desc}>
                 <TableCell>{row.desc}</TableCell>
-                <TableCell align="right">{row.qty}</TableCell>
+                <TableCell align="right">{ row.qty }</TableCell>
                 <TableCell align="right">R${row.unit}</TableCell>
                 <TableCell align="right">{ccyFormat(row.price)}</TableCell>
               </TableRow>
