@@ -27,7 +27,7 @@ function Events(props) {
               <EventCard imageUrl='banner-gradient.jpg'/>
               <EventCard imageUrl='banner-gradient.jpg'/>
             </Box>
-          </Carousel>
+        </Carousel>
        </div>
        <div className="CarouselDesktop">
         <Carousel>
