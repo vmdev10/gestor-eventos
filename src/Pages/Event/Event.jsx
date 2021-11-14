@@ -3,6 +3,7 @@ import "./Event.css";
 import BannerEvent from "../../components/BannerEvent/Index";
 import About from "../../components/About/Index";
 import Speakers from "../../components/Speakers/Index";
+import Programation from "../../components/Programation/Index";
 
 import React from "react";
 
@@ -13,41 +14,8 @@ function Event() {
 
       <About />
       <Speakers />
-
-      <div className="Programation">
-        <h1>Programação</h1>
-
-        <div className="ProgramationContainer">
-          <div>
-            <h1>
-              <strong>9:00</strong>
-            </h1>
-            <span className="Speaker">VINÍCUIS MARTINS:</span>
-            <span>Conteúdo é o Rei. Design é a Rainha</span>
-          </div>
-          <div>
-            <h1>
-              <strong>9:00</strong>
-            </h1>
-            <span className="Speaker">VINÍCUIS MARTINS:</span>
-            <span>Conteúdo é o Rei. Design é a Rainha</span>
-          </div>
-          <div>
-            <h1>
-              <strong>9:00</strong>
-            </h1>
-            <span className="Speaker">VINÍCUIS MARTINS:</span>
-            <span>Conteúdo é o Rei. Design é a Rainha</span>
-          </div>
-          <div>
-            <h1>
-              <strong>9:00</strong>
-            </h1>
-            <span className="Speaker">VINÍCUIS MARTINS:</span>
-            <span>Conteúdo é o Rei. Design é a Rainha</span>
-          </div>
-        </div>
-      </div>
+      <Programation />
+     
 
       <div className="Location">
         <div>
