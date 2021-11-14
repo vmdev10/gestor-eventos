@@ -41,9 +41,9 @@ function Tickets() {
   }
 
   const rows = [
-    createRow("Ingresso Antecipado", <GroupedButtons amount={sendAmount}/>, 80),
-    createRow("Ingresso Regular", <GroupedButtons amount={sendAmount}/>, 100),
-    createRow("Ingresso VIP", <GroupedButtons amount={sendAmount}/>, 120),
+    createRow("Ingresso Antecipado", 1, 80),
+    createRow("Ingresso Regular", 1, 100),
+    createRow("Ingresso VIP", 1, 120),
   ];
 
   const TAX_RATE = 0.07;
