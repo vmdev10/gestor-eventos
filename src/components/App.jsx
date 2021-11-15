@@ -7,8 +7,9 @@ import Category from '../Pages/Category/Category'
 import City from '../Pages/CityEvents/CityEvents'
 import Event from '../Pages/Event/Event'
 import Tickets from '../Pages/Tickets';
+import Signin from '../Pages/Signin'
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import React from "react";
 
 function App() {
@@ -18,12 +19,14 @@ function App() {
         <Navbar />
         
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={ <Navigate replace to="/signin"/> }/>
+          <Route path="/home" element={<Home />}/>
           <Route path="/categories" element={<Categories />} />
-          <Route path="/categories/:id" element={<Category />}></Route>
-          <Route path="/city" element={<City />}></Route>
-          <Route path="/event/:id" element={<Event />}></Route>
-          <Route path="/event/:id/ticket" element={<Tickets />}></Route>
+          <Route path="/categories/:id" element={<Category />} />
+          <Route path="/city" element={<City />} />
+          <Route path="/event/:id" element={<Event />} />
+          <Route path="/event/:id/ticket" element={<Tickets />} />
+          <Route path="/Signin" element={<Signin />} />
         </Routes>
      </Router>
     </div>
