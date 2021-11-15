@@ -10,13 +10,13 @@ function Carousel(props) {
   return (
     <CarouselMUI
       className="Carousel"
-      autoPlay={props.autoPlay || false }
+      autoPlay={props.autoPlay || true }
       interval={props.autoPlay || 3000}
       animation={props.autoPlay || 'slide'}
-      navButtonsAlwaysVisible={ props.navButtonsAlwaysVisible || true }
+      navButtonsAlwaysVisible={ props.navButtonsAlwaysVisible || false }
       NextIcon={ <ArrowForwardIosIcon/> }
       PrevIcon={ <ArrowBackIosIcon/> }
-      indicators={ false }
+      indicators={ true }
       fullHeightHover={ false }
     >
       {

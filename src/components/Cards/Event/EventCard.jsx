@@ -11,11 +11,11 @@ function EventCard(props) {
 
       <div className="Informations">
         <span>
-          <strong>QUA, 10 NOV - 17:00</strong>
+          <strong>{ props.eventDate }</strong>
         </span>
-        <h3>10 Soft Skills You Need 1 Day Training in Campinas</h3>
+        <h3>{ props.name }</h3>
 
-        <p>Regus, South West, 421 7 Ave SE 30th Floor Calgary, AB, Canadá</p>
+        <p>{ props.address }</p>
 
         <a href="">
           <button>Ver detalhes</button>
