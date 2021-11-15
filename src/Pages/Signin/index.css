@@ -79,7 +79,7 @@
 }
 
 .SocialLoginButtons .SocialLoginButton {
-  padding: 1.125rem 1rem;
+  padding: 1rem;
   margin: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@
 }
 
 .SocialLoginButton:nth-child(2) {
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 1rem;
   background-color: #3a559f;
   color: var(--white);
 }
@@ -112,6 +112,20 @@
   margin-right: 1rem;
 }
 
+.SigninOrSignup {
+  padding: 2rem 0;
+
+  text-align: center;
+}
+
+.SigninOrSignup span {
+  font-weight: 500;
+}
+
+.SigninOrSignup a {
+  text-decoration: none;
+}
+
 .LargeCardContainer .WelcomeSection {
   display: none;
 }
@@ -119,6 +133,8 @@
 @media (min-width: 500px) {
   .LargeCardContainer {
     background-image: url("https://images.unsplash.com/photo-1579547621309-5e57ab324182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: calc(100vh - 4.5rem);
     padding: 1rem 2rem 0 0;
 
@@ -135,11 +151,21 @@
 
 @media (min-width: 1024px) {
   .LargeCardContainer .WelcomeSection {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .LargeCardContainer .WelcomeSection img {
     width: 10rem;
+    margin: .5rem 0;
+  }
+
+  .LargeCardContainer .WelcomeSection span {
+    font-size: 1rem;
+    color: var(--primary);
+    padding: .5rem 0;
+    font-weight: 500;
   }
 
   .FormContainer h3 {

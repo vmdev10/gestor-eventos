@@ -10,6 +10,8 @@ function Signin() {
     <div className="LargeCardContainer">
        <div className="WelcomeSection">
         <img src="/images/logo.png" alt="" />
+
+        <span>Faça login ou crie uma conta</span>
       </div>
 
       <div className="LargeCard">
@@ -45,6 +47,12 @@ function Signin() {
             <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536394.png?token=exp=1636944791~hmac=ff046eea2989d3eb0595062c186fc09b" alt="" />
             <span>Continuar com o facebook</span>
           </div>
+        </div>
+
+        <div className="SigninOrSignup">
+          <span>Novo usuário? <a href="">
+            Crie uma conta  
+          </a></span>
         </div>
       </div>
     </div>
