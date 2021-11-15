@@ -8,6 +8,7 @@ import City from '../Pages/CityEvents/CityEvents'
 import Event from '../Pages/Event/Event'
 import Tickets from '../Pages/Tickets';
 import Signin from '../Pages/Signin'
+import Signup from '../Pages/Signup';
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import React from "react";
@@ -26,7 +27,8 @@ function App() {
           <Route path="/city" element={<City />} />
           <Route path="/event/:id" element={<Event />} />
           <Route path="/event/:id/ticket" element={<Tickets />} />
-          <Route path="/Signin" element={<Signin />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
      </Router>
     </div>
