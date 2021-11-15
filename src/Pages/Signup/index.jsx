@@ -15,7 +15,7 @@ function Signup() {
 
       <div className="LargeCard">
         <form className="FormContainer">
-          <h3>Fazer login</h3>
+          <h3>Criar uma conta</h3>
 
           <div className="FormControl">
             <div className="FormControlInput">
@@ -50,6 +50,10 @@ function Signup() {
                 placeholder="Digite uma senha"
               />
             </div>
+          </div>
+
+          <div className="ContinueButton">
+            <button>Continuar</button>
           </div>
         </form>
 

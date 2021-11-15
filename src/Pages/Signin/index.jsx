@@ -31,6 +31,10 @@ function Signin() {
               <input type="password" name="password" id="password" placeholder="Digite sua senha"/>
             </div>
           </div>
+
+          <div className="ContinueButton">
+            <button>Continuar</button>
+          </div>
         </form>
 
         <div className="Divider">
