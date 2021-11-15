@@ -1,5 +1,7 @@
 import "./EventCard.css";
 
+import { Link } from "react-router-dom";
+
 import React from "react";
 
 function EventCard(props) {
@@ -17,9 +19,9 @@ function EventCard(props) {
 
         <p>{ props.address }</p>
 
-        <a href="">
+        <Link to={ `/event/${ props.id }` }>
           <button>Ver detalhes</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -7,74 +7,7 @@ import { Box } from "@material-ui/core";
 
 import React, { useState, useEffect } from "react";
 
-const eventsData = [
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-  {
-    id: 1,
-    lat: 0,
-    lng: 0,
-    name: "Some name",
-    description: "Some Description",
-    address: "Santa Helena, 370, Picos, Piauí, Brasil",
-    eventDate: "QUA, 10 NOV - 17:00",
-    categorieId: 1,
-    imageUrl: "banner-gradient.jpg",
-  },
-];
+import eventsData from '../../store/events';
 
 function Events(props) {
   const [events, setEvents] = useState([]);
@@ -112,20 +45,19 @@ function Events(props) {
         <a href="">
           <button>Ver tudo</button>
         </a>
-        {/* {
-          console.log(handleFormatBoxes(events, 4))
-        } */}
 
         <div className="CarouselMobile">
           <Carousel>
-            {handleFormatBoxes(events, 2).map((box) => (
-              <Box className="CarouselCardsContainer">
-                {box.currenElements.map((eventCard) => (
+            {handleFormatBoxes(events, 2).map((box, index) => (
+              <Box key={index} className="CarouselCardsContainer">
+                {box.currenElements.map((eventCard, index) => (
                   <EventCard
+                    key={index}
                     imageUrl={eventCard.imageUrl}
                     eventDate={eventCard.eventDate}
                     name={eventCard.name}
                     address={eventCard.address}
+                    id={eventCard.id}
                   />
                 ))}
               </Box>
@@ -134,14 +66,16 @@ function Events(props) {
         </div>
         <div className="CarouselDesktop">
           <Carousel>
-            {handleFormatBoxes(events, 4).map((box) => (
-              <Box className="CarouselCardsContainer">
-                {box.currenElements.map((eventCard) => (
+            {handleFormatBoxes(events, 4).map((box, index) => (
+              <Box key={index} className="CarouselCardsContainer">
+                {box.currenElements.map((eventCard, index) => (
                   <EventCard
+                    key={index}
                     imageUrl={eventCard.imageUrl}
                     eventDate={eventCard.eventDate}
                     name={eventCard.name}
                     address={eventCard.address}
+                    id={eventCard.id}
                   />
                 ))}
               </Box>
