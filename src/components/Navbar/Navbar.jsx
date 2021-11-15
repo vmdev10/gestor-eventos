@@ -14,7 +14,7 @@ function Navbar() {
           <MenuIcon />
         </div>
 
-        <Link className="Logo" to="/">
+        <Link className="Logo" to="/home">
           <img src="/images/logo.png" alt="" />
         </Link>
 
@@ -35,15 +35,15 @@ function Navbar() {
         </div>
 
         <div className="NavLinks">
-          <Link className="NavLink" to="categories">
+          <Link className="NavLink" to="/categories">
             Participar de evento
           </Link>
 
-          <Link className="NavLink" to="login">
+          <Link className="NavLink" to="/signin">
             Entrar
           </Link>
 
-          <Link className="NavLink Contrast" to="signup">
+          <Link className="NavLink Contrast" to="/signup">
             Cadastre-se
           </Link>
         </div>
