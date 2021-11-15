@@ -1,5 +1,7 @@
 import "./Presentation.css";
 
+import { Link } from "react-router-dom";
+
 import React from "react";
 
 function Presentation() {
@@ -14,9 +16,9 @@ function Presentation() {
             Conectando você com os acontecimentos do mundo
           </span>
 
-          <a href="" className="Event">
-            <button>Participe de um evento</button>
-          </a>
+          <Link className="Event" to="/categories">
+              <button>Participe de um evento</button>
+          </Link>
         </div>
       </div>
     </div>
