@@ -8,6 +8,10 @@ import React from "react";
 function Signin() {
   return (
     <div className="LargeCardContainer">
+       <div className="WelcomeSection">
+        <img src="/images/logo.png" alt="" />
+      </div>
+
       <div className="LargeCard">
         <form className="FormContainer">
           <h3>Fazer login</h3>
@@ -32,7 +36,15 @@ function Signin() {
         </div>
 
         <div className="SocialLoginButtons">
-          
+          <div className="SocialLoginButton">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="" />
+            <span>Continuar com o google</span>
+          </div>
+
+          <div className="SocialLoginButton">
+            <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536394.png?token=exp=1636944791~hmac=ff046eea2989d3eb0595062c186fc09b" alt="" />
+            <span>Continuar com o facebook</span>
+          </div>
         </div>
       </div>
     </div>
