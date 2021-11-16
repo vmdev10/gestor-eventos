@@ -1,7 +1,7 @@
-import './Highlighted.css'
+import './index.css'
 
 import HighlightedCard from "../Cards/Highlighted";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel";
 
 import { Box } from "@material-ui/core";
 

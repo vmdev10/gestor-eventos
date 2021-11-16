@@ -1,6 +1,6 @@
-import "./Cities.css";
+import "./index.css";
 
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel";
 import CityCard from "../Cards/Cities";
 
 import citiesData from '../../store/cities';

@@ -1,6 +1,6 @@
 import "./index.css";
 
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel";
 import ActivityCard from "../Cards/Activities";
 
 import categoriesData from '../../store/categories';

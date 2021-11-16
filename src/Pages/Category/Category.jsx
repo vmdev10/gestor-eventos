@@ -2,7 +2,7 @@ import "./Category.css";
 import categoriesData from '../../store/categories'
 
 import Breadcrumb from "../../components/Breadcrumbs";
-import Event from '../../components/Events/Events'
+import Event from '../../components/Events'
 import {
   useParams
 } from 'react-router-dom';

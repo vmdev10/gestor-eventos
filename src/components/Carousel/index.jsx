@@ -1,4 +1,4 @@
-import './Carousel.css'
+import './index.css'
 
 import CarouselMUI from 'react-material-ui-carousel';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';

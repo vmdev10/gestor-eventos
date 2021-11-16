@@ -2,9 +2,9 @@ import "./Home.css";
 
 import Presentation from '../components/Presentation/Presentation'
 import Activities from "../components/Activities";
-import Cities from "../components/City/Cities"
-import Highlighted from "../components/Highlighted/Highlighted"
-import Events from "../components/Events/Events"
+import Cities from "../components/City"
+import Highlighted from "../components/Highlighted"
+import Events from "../components/Events"
 
 import React from "react";
 
