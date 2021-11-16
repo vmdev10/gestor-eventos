@@ -31,3 +31,9 @@
     height: 10rem;
   }
 }
+
+@media (min-width: 1280px) {
+  .CategoriesComponent {
+    justify-content: start;
+  }
+}
