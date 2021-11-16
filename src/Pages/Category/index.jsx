@@ -1,4 +1,4 @@
-import "./Category.css";
+import "./index.css";
 import categoriesData from '../../store/categories'
 
 import Breadcrumb from "../../components/Breadcrumbs";

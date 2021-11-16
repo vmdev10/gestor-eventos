@@ -1,4 +1,4 @@
-import CityEvents from '../Category/Category'
+import CityEvents from '../Category'
 
 import React from "react";
 

@@ -3,9 +3,9 @@ import './App.css'
 import Home from '../Pages/Home'
 import Navbar from '../components/Navbar'
 import Categories from '../Pages/Categories';
-import Category from '../Pages/Category/Category'
-import City from '../Pages/CityEvents/CityEvents'
-import Event from '../Pages/Event/Event'
+import Category from '../Pages/Category'
+import City from '../Pages/CityEvents'
+import Event from '../Pages/Event'
 import Tickets from '../Pages/Tickets';
 import Signin from '../Pages/Signin'
 import Signup from '../Pages/Signup';

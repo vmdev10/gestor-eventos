@@ -1,8 +1,8 @@
-import './Categories.css'
+import './index.css'
 
-import CategoryCard from '../components/Cards/Activities'
+import CategoryCard from '../../components/Cards/Activities'
 
-import categoriesData from '../store/categories'
+import categoriesData from '../../store/categories'
 
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
