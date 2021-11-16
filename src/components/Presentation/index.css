@@ -50,6 +50,13 @@
   margin-left: 0.5rem;
 }
 
+.Presentation .Event button:hover,
+.Presentation .Event button:active {
+  background-color: var(--secondary);
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
 @media (min-width: 886px) {
   .Title {
     font-size: 4rem;
