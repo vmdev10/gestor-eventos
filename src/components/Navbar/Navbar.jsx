@@ -1,6 +1,7 @@
 import "./Navbar.css";
 
-import MenuIcon from "@material-ui/icons/Menu";
+import Sidebar from '../Sidebar'
+
 import SearchIcon from "@material-ui/icons/Search";
 
 import { Link } from "react-router-dom";
@@ -11,7 +12,7 @@ function Navbar() {
     <div className="NavContainer">
       <div className="Navbar">
         <div className="MenuToggle">
-          <MenuIcon />
+          <Sidebar />
         </div>
 
         <Link className="Logo" to="/home">

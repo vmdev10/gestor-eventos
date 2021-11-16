@@ -1,0 +1,45 @@
+.NavlinksMobile {
+  min-height:  calc(100vh - 2rem);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 1rem 0;
+}
+
+.NavLinkMobile {
+  padding: .9375rem 2rem;
+  color: var(--primary);
+
+  margin: .5rem 0;
+}
+
+.NavLinkMobile:hover,
+.NavLinkMobile:active {
+  background-color: var(--primary);
+  color: var(--white);
+
+  border-radius: 44px;
+}
+
+.NavLinkMobile.Contrast {
+  background-color: var(--primary);
+    color: var(--white);
+    padding: .9375rem 2rem;
+    border-radius: 44px;
+    margin-left: .5rem;
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+
+    text-align: center;
+}
+
+.NavLinkMobile.Contrast:hover,
+.NavLinkMobile.Contrast:active {
+  background-color: var(--secondary);
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+}
