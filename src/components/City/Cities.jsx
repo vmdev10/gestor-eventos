@@ -18,7 +18,9 @@ function FindCity() {
   }, []);
 
   const handleFormatCities = (quantity) => {
-    return handleFormatBoxes(cities, quantity).map((box, index) => (
+    const citiesFormatted = handleFormatBoxes(cities, quantity)
+    
+    return citiesFormatted.map((box, index) => (
       <Box key={index} className="CarouselCardsContainer">
         {box.currenElements.map((currentCity, index) => (
           <CityCard

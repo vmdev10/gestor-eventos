@@ -8,6 +8,7 @@ import { Box } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 
 import eventsData from '../../store/events';
+import { handleFormatBoxes } from '../../shareds/helpers'
 
 function Events(props) {
   const [events, setEvents] = useState([]);
@@ -16,26 +17,24 @@ function Events(props) {
     setEvents(eventsData);
   }, []);
 
-  const handleFormatBoxes = (allElements, quantityElementsPerBox) => {
-    const boxes = [];
-
-    const quantityBox = allElements.length / quantityElementsPerBox;
-
-    for (let index = 0; index < quantityBox; index++) {
-      const initialElementIndex = index * quantityElementsPerBox;
-      const endElementIndex = initialElementIndex + quantityElementsPerBox;
-      const currenElements = allElements.slice(
-        initialElementIndex,
-        endElementIndex
-      );
-
-      boxes.push({
-        currenElements,
-      });
-    }
-
-    return boxes;
-  };
+  const handleFormatEvents = (quantity) => {
+    const eventsFormatted = handleFormatBoxes(events, quantity)
+    
+    return eventsFormatted.map((box, index) => (
+      <Box key={index} className="CarouselCardsContainer">
+        {box.currenElements.map((eventCard, index) => (
+          <EventCard
+            key={index}
+            imageUrl={eventCard.imageUrl}
+            eventDate={eventCard.eventDate}
+            name={eventCard.name}
+            address={eventCard.address}
+            id={eventCard.id}
+          />
+        ))}
+      </Box>
+    ))
+  }
 
   return (
     <div className="EventsContainer">
@@ -48,38 +47,12 @@ function Events(props) {
 
         <div className="CarouselMobile">
           <Carousel>
-            {handleFormatBoxes(events, 2).map((box, index) => (
-              <Box key={index} className="CarouselCardsContainer">
-                {box.currenElements.map((eventCard, index) => (
-                  <EventCard
-                    key={index}
-                    imageUrl={eventCard.imageUrl}
-                    eventDate={eventCard.eventDate}
-                    name={eventCard.name}
-                    address={eventCard.address}
-                    id={eventCard.id}
-                  />
-                ))}
-              </Box>
-            ))}
+            {handleFormatEvents(2)}
           </Carousel>
         </div>
         <div className="CarouselDesktop">
           <Carousel>
-            {handleFormatBoxes(events, 4).map((box, index) => (
-              <Box key={index} className="CarouselCardsContainer">
-                {box.currenElements.map((eventCard, index) => (
-                  <EventCard
-                    key={index}
-                    imageUrl={eventCard.imageUrl}
-                    eventDate={eventCard.eventDate}
-                    name={eventCard.name}
-                    address={eventCard.address}
-                    id={eventCard.id}
-                  />
-                ))}
-              </Box>
-            ))}
+            {handleFormatEvents(4)}
           </Carousel>
         </div>
       </div>
