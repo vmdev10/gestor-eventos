@@ -19,10 +19,10 @@ function Events(props) {
       setEvents(eventsData);
     } else {
       const eventsByCategory = eventsData
-        .filter((event) => event.categoryId == categoryId);
+        .filter((event) => event.categoryId === parseInt(categoryId));
       setEvents(eventsByCategory);
     }
-  }, []);
+  }, [props.categoryId]);
 
   const handleFormatEvents = (quantity) => {
     const eventsFormatted = handleFormatBoxes(events, quantity)

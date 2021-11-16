@@ -16,10 +16,10 @@ function BannerEvent() {
 
   useEffect(() => {
     const currentEvent = eventsData
-      .find((event) => event.id == id);
+      .find((event) => event.id === parseInt(id));
 
     setEvent(currentEvent);
-  }, [])
+  }, [id])
   
   const links = [
     {

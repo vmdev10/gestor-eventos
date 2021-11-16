@@ -18,7 +18,7 @@ function Category() {
     const currentCategory = categoriesData.find((category) => category.id == id)
 
     setCurrentCategory(currentCategory)
-  })
+  }, [])
 
   const links = [
     {

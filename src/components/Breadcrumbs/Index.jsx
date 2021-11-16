@@ -11,7 +11,7 @@ function Breadcrumb(props) {
       <Breadcrumbs className="Breadcrumbs" aria-label="breadcrumb">
         {
           props.links?.map((link, index) => (
-            <Link  key={index} to={link.path || ''}>
+            <Link  key={index} to={link.path || '/'}>
               { link.title }
             </Link>
           ))
