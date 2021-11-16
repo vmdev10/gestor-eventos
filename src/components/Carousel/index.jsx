@@ -10,7 +10,7 @@ function Carousel(props) {
   return (
     <CarouselMUI
       className="Carousel"
-      autoPlay={props.autoPlay || true }
+      autoPlay={props.autoPlay || false }
       interval={props.interval || 3000 }
       animation={props.animation || 'slide'}
       navButtonsAlwaysVisible={ props.navButtonsAlwaysVisible || false }
