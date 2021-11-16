@@ -1,7 +1,7 @@
 import "./Category.css";
 import categoriesData from '../../store/categories'
 
-import Breadcrumb from "../../components/Breadcrumbs/Index";
+import Breadcrumb from "../../components/Breadcrumbs";
 import Event from '../../components/Events/Events'
 import {
   useParams

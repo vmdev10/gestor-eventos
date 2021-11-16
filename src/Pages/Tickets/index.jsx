@@ -1,4 +1,4 @@
-import BannerEvent from "../../components/BannerEvent/Index";
+import BannerEvent from "../../components/BannerEvent";
 import TicketsTable from "../../components/Table"
 
 import React from "react";

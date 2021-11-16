@@ -1,7 +1,7 @@
 import "./Home.css";
 
 import Presentation from '../components/Presentation/Presentation'
-import Activities from "../components/Activities/Activities";
+import Activities from "../components/Activities";
 import Cities from "../components/City/Cities"
 import Highlighted from "../components/Highlighted/Highlighted"
 import Events from "../components/Events/Events"

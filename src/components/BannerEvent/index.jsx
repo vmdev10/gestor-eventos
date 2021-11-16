@@ -1,8 +1,8 @@
-import './Index.css'
+import './index.css'
 
 import eventsData from '../../store/events'
 
-import Breadcrumb from '../Breadcrumbs/Index';
+import Breadcrumb from '../Breadcrumbs';
 import {
   useParams,
   Link

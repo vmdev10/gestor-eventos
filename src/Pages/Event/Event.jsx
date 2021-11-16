@@ -1,5 +1,5 @@
-import BannerEvent from "../../components/BannerEvent/Index";
-import About from "../../components/About/Index";
+import BannerEvent from "../../components/BannerEvent";
+import About from "../../components/About";
 import Speakers from "../../components/Speakers";
 import Programation from "../../components/Programation";
 

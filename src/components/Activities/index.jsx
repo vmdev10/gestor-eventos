@@ -1,4 +1,4 @@
-import "./Activities.css";
+import "./index.css";
 
 import Carousel from "../Carousel/Carousel";
 import ActivityCard from "../Cards/Activities/ActivityCard";
