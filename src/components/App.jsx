@@ -1,14 +1,14 @@
 import './App.css'
 
-import Home from '../Pages/Home'
+import Home from '../pages/Home'
 import Navbar from '../components/Navbar'
-import Categories from '../Pages/Categories';
-import Category from '../Pages/Category'
-import City from '../Pages/CityEvents'
-import Event from '../Pages/Event'
-import Tickets from '../Pages/Tickets';
-import Signin from '../Pages/Signin'
-import Signup from '../Pages/Signup';
+import Categories from '../pages/Categories';
+import Category from '../pages/Category'
+import City from '../pages/CityEvents'
+import Event from '../pages/Event'
+import Tickets from '../pages/Tickets';
+import Signin from '../pages/Signin'
+import Signup from '../pages/Signup';
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import React from "react";
