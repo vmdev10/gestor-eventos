@@ -34,6 +34,14 @@
   margin-left: .5rem
 }
 
+.CarouselContainer a button:hover,
+.CarouselContainer a button:active
+ {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
 @media (min-width: 425px) {
   .ActivitiesContainer h3 {
     padding-left: 2rem;
