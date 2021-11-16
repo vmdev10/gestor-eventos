@@ -10,28 +10,27 @@ export default [
     id: 2,
     category: "Workshops",
     description:
-      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um curso e fortaleça seu currículo!",
+      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um workshop e fortaleça seu currículo!",
     imageUrl: "banner-gradient.jpg",
   },
   {
     id: 3,
     category: "Congressos",
-    description:
-      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um curso e fortaleça seu currículo!",
+    description: "Escolha um evento e desenvolva seu networking!",
     imageUrl: "banner-gradient.jpg",
   },
   {
     id: 4,
     category: "Palestras",
     description:
-      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um curso e fortaleça seu currículo!",
+      "Ampliar sua rede de contatos é expandir suas possibilidades profissionais.",
     imageUrl: "banner-gradient.jpg",
   },
   {
     id: 5,
     category: "Reuniões",
     description:
-      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um curso e fortaleça seu currículo!",
+      "Alcance novos públicos, melhore a experiência dos clientes e seja mais produtivo!",
     imageUrl: "banner-gradient.jpg",
   },
   {
@@ -52,7 +51,7 @@ export default [
     id: 8,
     category: "Tecnologia",
     description:
-      "Seja para se capacitar profissionalmente ou pelo simples prazer de aprender algo novo: escolha um curso e fortaleça seu currículo!",
+      "Do básico ao avançado, da informática à programação. Encontre aqui cursos, palestras, hackathon e diversos eventos do universo da tecnologia.",
     imageUrl: "banner-gradient.jpg",
   },
 ];
