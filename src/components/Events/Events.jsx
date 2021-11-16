@@ -14,7 +14,17 @@ function Events(props) {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    setEvents(eventsData);
+    const categoryId = props.categoryId;
+    if(!categoryId) {
+      setEvents(eventsData);
+    } else {
+      const eventsByCategory = eventsData
+        .filter((event) => event.categoryId == categoryId);
+      setEvents(eventsByCategory);
+    }
+
+
+
   }, []);
 
   const handleFormatEvents = (quantity) => {

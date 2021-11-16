@@ -2,10 +2,15 @@ import "./Category.css";
 
 import Breadcrumb from "../../components/Breadcrumbs/Index";
 import Event from '../../components/Events/Events'
+import {
+  useParams
+} from 'react-router-dom';
 
 import React from "react";
 
 function Category() {
+  const { id } = useParams();
+
   return (
     <>
       <div className="CategoryContainer">
@@ -24,9 +29,9 @@ function Category() {
         </div>
       </div>
 
-      <Event event='Eventos online em alta'/>
-      <Event event='Começa em breve'/>
-      <Event event='Tecnologia'/>
+      <Event event='Eventos online em alta' categoryId={id} />
+      <Event event='Começa em breve' categoryId={id}/>
+      <Event event='Tecnologia' categoryId={id}/>
     </>
   );
 }

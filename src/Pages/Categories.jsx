@@ -2,23 +2,28 @@ import './Categories.css'
 
 import CategoryCard from '../components/Cards/Activities/ActivityCard'
 
-import React from "react";
+import categoriesData from '../store/categories'
+
+import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 function Categories() {
+  const [categories, setCategories] = useState([])
+
+  useEffect(() => {
+    setCategories(categoriesData)
+  }, [])
+
   return (
     <div className="CategoriesComponent">
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
-      <CategoryCard imageUrl="banner-gradient.jpg" category="Workshops"/>
+      { categories.map((currentCategory, index) => (
+        <Link to={`/categories/${currentCategory.id}`} key={index}>
+          <CategoryCard
+            imageUrl={currentCategory.imageUrl}
+            category={currentCategory.category}
+          />
+        </Link>
+      )) }
     </div>
   )
 }
