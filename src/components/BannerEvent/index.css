@@ -30,6 +30,17 @@
   max-width: 350px;
 }
 
+.Address p {
+  color: var(--primary)
+}
+
+.Address a button:hover,
+.Address a button:active {
+  background-color: var(--secondary);
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
 @media (min-width: 800px) {
   .BannerEventContainer {
     padding: 2rem 4rem;
@@ -60,5 +71,9 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+  }
+
+  .Address p {
+    color: var(--white)
   }
 }
