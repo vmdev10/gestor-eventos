@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./index.css";
 
 import Sidebar from '../Sidebar'
 

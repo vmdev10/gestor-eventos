@@ -1,7 +1,7 @@
 import './App.css'
 
 import Home from '../Pages/Home'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/Navbar'
 import Categories from '../Pages/Categories';
 import Category from '../Pages/Category/Category'
 import City from '../Pages/CityEvents/CityEvents'

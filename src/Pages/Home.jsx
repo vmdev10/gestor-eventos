@@ -1,6 +1,6 @@
 import "./Home.css";
 
-import Presentation from '../components/Presentation/Presentation'
+import Presentation from '../components/Presentation'
 import Activities from "../components/Activities";
 import Cities from "../components/City"
 import Highlighted from "../components/Highlighted"
