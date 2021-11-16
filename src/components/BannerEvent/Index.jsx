@@ -1,21 +1,54 @@
-import Breadcrumb from '../Breadcrumbs/Index';
 import './Index.css'
 
+import eventsData from '../../store/events'
+
+import Breadcrumb from '../Breadcrumbs/Index';
+import {
+  useParams
+} from 'react-router-dom';
+
+import React, { useState, useEffect } from "react";
+
 function BannerEvent() {
+  const { id } = useParams();
+  const [event, setEvent] = useState({});
+
+  useEffect(() => {
+    const currentEvent = eventsData
+      .find((event) => event.id == id);
+
+    setEvent(currentEvent);
+  }, [])
+  
+  const links = [
+    {
+      path: '/home',
+      title: 'Home'
+    },
+    {
+      path: `/home`,
+      title: 'Eventos'
+    },
+    {
+      path: `/event/${id}`,
+      title: `${event.name}`
+    },
+  ];
+
   return (
     <div className="BannerEventContainer">
-      <Breadcrumb />
+      <Breadcrumb links={links}/>
       
       <div className="Event">
         <div>
-          <p>Fique à Frente da Indústria</p>
-          <h1>Conferência NWS 2023</h1>
+          <span>{ event.eventDate }</span>
+          <p>{ event.description }</p>
+          <h1>{ event.name }</h1>
         </div>
 
         <div className="Address">
           <p>
-            24 de nov. de 2023 19:00 – 25 de nov. de 2023 23:00 Av. Bernardino
-            de Campos, 98 - Paraíso, São Paulo
+            { event.address }
           </p>
           <a>
             <button>Comprar ingressos</button>

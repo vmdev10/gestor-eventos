@@ -22,9 +22,6 @@ function Events(props) {
         .filter((event) => event.categoryId == categoryId);
       setEvents(eventsByCategory);
     }
-
-
-
   }, []);
 
   const handleFormatEvents = (quantity) => {
