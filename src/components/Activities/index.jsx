@@ -1,7 +1,7 @@
 import "./index.css";
 
 import Carousel from "../Carousel/Carousel";
-import ActivityCard from "../Cards/Activities/ActivityCard";
+import ActivityCard from "../Cards/Activities";
 
 import categoriesData from '../../store/categories';
 import { handleFormatBoxes } from '../../shareds/helpers'

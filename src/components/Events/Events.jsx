@@ -1,7 +1,7 @@
 import "./Events.css";
 
 import Carousel from "../Carousel/Carousel";
-import EventCard from "../Cards/Event/EventCard";
+import EventCard from "../Cards/Event";
 
 import { Box } from "@material-ui/core";
 

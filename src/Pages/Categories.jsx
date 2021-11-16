@@ -1,6 +1,6 @@
 import './Categories.css'
 
-import CategoryCard from '../components/Cards/Activities/ActivityCard'
+import CategoryCard from '../components/Cards/Activities'
 
 import categoriesData from '../store/categories'
 

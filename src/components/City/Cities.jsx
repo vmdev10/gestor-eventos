@@ -1,7 +1,7 @@
 import "./Cities.css";
 
 import Carousel from "../Carousel/Carousel";
-import CityCard from "../Cards/Cities/CityCard";
+import CityCard from "../Cards/Cities";
 
 import citiesData from '../../store/cities';
 import { handleFormatBoxes } from '../../shareds/helpers'
