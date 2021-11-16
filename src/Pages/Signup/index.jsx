@@ -3,6 +3,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import LockIcon from "@material-ui/icons/Lock";
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -53,7 +54,9 @@ function Signup() {
           </div>
 
           <div className="ContinueButton">
-            <button>Continuar</button>
+            <Link to={'/home'} >
+              Continuar
+            </Link>
           </div>
         </form>
 
@@ -67,7 +70,7 @@ function Signup() {
               src="https://cdn-icons-png.flaticon.com/512/281/281764.png"
               alt=""
             />
-            <span>Continuar com o google</span>
+            <Link to={'/home'}>Continuar com o google</Link>
           </div>
 
           <div className="SocialLoginButton">
@@ -75,13 +78,13 @@ function Signup() {
               src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536394.png?token=exp=1636944791~hmac=ff046eea2989d3eb0595062c186fc09b"
               alt=""
             />
-            <span>Continuar com o facebook</span>
+            <Link to={'/home'}>Continuar com o facebook</Link>
           </div>
         </div>
 
         <div className="SigninOrSignup">
           <span>
-            Já tem uma conta? <a href="">Faça login</a>
+            Já tem uma conta? <Link to={'/signin'}>Faça login</Link>
           </span>
         </div>
       </div>

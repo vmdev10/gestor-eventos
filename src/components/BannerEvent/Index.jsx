@@ -4,7 +4,8 @@ import eventsData from '../../store/events'
 
 import Breadcrumb from '../Breadcrumbs/Index';
 import {
-  useParams
+  useParams,
+  Link
 } from 'react-router-dom';
 
 import React, { useState, useEffect } from "react";
@@ -50,9 +51,9 @@ function BannerEvent() {
           <p>
             { event.address }
           </p>
-          <a>
+          <Link to={`/event/${id}/ticket`}>
             <button>Comprar ingressos</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
