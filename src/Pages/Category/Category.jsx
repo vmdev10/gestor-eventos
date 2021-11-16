@@ -10,13 +10,27 @@ import React from "react";
 
 function Category() {
   const { id } = useParams();
+  const links = [
+    {
+      path: '/home',
+      title: 'Home'
+    },
+    {
+      path: '/categories',
+      title: 'Categorias'
+    },
+    {
+      path: `/categories/${id}`,
+      title: 'Categorias'
+    },
+  ];
 
   return (
     <>
       <div className="CategoryContainer">
         <div className="Category">
 
-          <Breadcrumb />
+          <Breadcrumb links={links}/>
           
           <div className="CategoryPresentation">
             <h3>Categoria</h3>

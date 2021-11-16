@@ -2,30 +2,21 @@ import './Index.css'
 
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+import { Link } from 'react-router-dom';
 
 import React from "react";
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
-
-function Breadcrumb() {
+function Breadcrumb(props) {
   return (
     <div className="BreadcrumbContainer">
       <Breadcrumbs className="Breadcrumbs" aria-label="breadcrumb">
-        <Link color="inherit" href="/" onClick={handleClick}>
-          Home
-        </Link>
-        <Link
-          color="inherit"
-          href="/getting-started/installation/"
-          onClick={handleClick}
-        >
-          Categorias
-        </Link>
-        <Typography color="textPrimary">Categoria</Typography>
+        {
+          props.links?.map((link, index) => (
+            <Link  key={index} to={link.path || ''}>
+              { link.title }
+            </Link>
+          ))
+        }
       </Breadcrumbs>
     </div>
   );
