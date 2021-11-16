@@ -1,4 +1,5 @@
 import "./Category.css";
+import categoriesData from '../../store/categories'
 
 import Breadcrumb from "../../components/Breadcrumbs/Index";
 import Event from '../../components/Events/Events'
@@ -6,10 +7,19 @@ import {
   useParams
 } from 'react-router-dom';
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Category() {
   const { id } = useParams();
+
+  const [currentCategory, setCurrentCategory] = useState({})
+
+  useEffect(() => {
+    const currentCategory = categoriesData.find((category) => category.id == id)
+
+    setCurrentCategory(currentCategory)
+  })
+
   const links = [
     {
       path: '/home',
@@ -21,7 +31,7 @@ function Category() {
     },
     {
       path: `/categories/${id}`,
-      title: 'Categorias'
+      title: currentCategory.category
     },
   ];
 
@@ -33,11 +43,9 @@ function Category() {
           <Breadcrumb links={links}/>
           
           <div className="CategoryPresentation">
-            <h3>Categoria</h3>
+            <h3>{ currentCategory.category }</h3>
             <p>
-              Seja para se capacitar profissionalmente ou pelo simples prazer de
-              aprender algo novo: escolha um curso ou workshop e fortaleça seu
-              currículo!
+              { currentCategory.description }
             </p>
           </div>
         </div>
