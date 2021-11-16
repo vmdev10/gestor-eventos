@@ -16,7 +16,11 @@
 
 .Activity span {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+  
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 
