@@ -3,58 +3,37 @@ import "./Activities.css";
 import Carousel from "../Carousel/Carousel";
 import ActivityCard from "../Cards/Activities/ActivityCard";
 
+import categoriesData from '../../store/categories';
+import { handleFormatBoxes } from '../../shareds/helpers'
+
 import { Box } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 import React, { useState, useEffect } from "react";
 
 function FindEvent() {
-  const [boxes, setBoxes] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    setBoxes([
-      {
-        categories: [
-          {
-            category: "Cursos",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "Workshops",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "Black friday",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "Teatros",
-            imageUrl: "banner-gradient.jpg",
-          },
-        ],
-      },
-      {
-        categories: [
-          {
-            category: "Finanças",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "História",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "Matemática",
-            imageUrl: "banner-gradient.jpg",
-          },
-          {
-            category: "Tecnologia",
-            imageUrl: "banner-gradient.jpg",
-          },
-        ],
-      },
-    ]);
+    setCategories(categoriesData);
   }, []);
+
+  const handleFormatCategories = (quantity) => {
+    const categoriesFormatted = handleFormatBoxes(categories, quantity)
+    
+    return categoriesFormatted.map((box, index) => (
+      <Box className="CarouselCardsContainer" key={index}>
+        {box.currenElements.map((currentCategory, index) => (
+          <Link to={`/categories/${currentCategory.id}`} key={index}>
+            <ActivityCard
+              imageUrl={currentCategory.imageUrl}
+              category={currentCategory.category}
+            />
+          </Link>
+        ))}
+      </Box>
+    ))
+  }
 
   return (
     <div className="ActivitiesContainer">
@@ -66,18 +45,7 @@ function FindEvent() {
         </Link>
 
         <Carousel>
-          {boxes.map((box, index) => (
-            <Box className="CarouselCardsContainer" key={index}>
-              {box.categories.map((currentCategory, index) => (
-                <Link to={`/categories/${currentCategory.category}`} key={index}>
-                  <ActivityCard
-                    imageUrl={currentCategory.imageUrl}
-                    category={currentCategory.category}
-                  />
-                </Link>
-              ))}
-            </Box>
-          ))}
+          {handleFormatCategories(4)}
         </Carousel>
       </div>
     </div>

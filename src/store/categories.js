@@ -1,4 +1,4 @@
-export const categories = [
+export default [
   {
     id: 1,
     category: "Cursos",
